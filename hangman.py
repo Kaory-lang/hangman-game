@@ -1,3 +1,9 @@
+#Kaory Henriquez
+#Matricula: 19-1416
+#Git-hub projact link: https://github.com/Kaory-lang/hangman-game
+
+#Main a ejecutar.
+
 import random
 
 ############## Functions
@@ -44,15 +50,15 @@ lista = []
 #################### File manipulation
 for i, line in enumerate(open("./words.txt", "r", encoding='utf-8')):
     if i == index:
-        print(line)
-        print(normalize(line.casefold()))
+        #print(line)
+        #print(normalize(line.casefold()))
         words.close()
         break
 
 for i in range(0,len(line)-1):
     lista.append('__ ')
 
-print(lista)
+#print(lista)
 
 ################## Start game
 while fails != 5:
