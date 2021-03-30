@@ -61,19 +61,15 @@ for i in range(0,len(line)-1):
 #print(lista)
 
 ################## Start game
-while fails != 5:
+while fails != 3:
 
     #################### Draw Game
     if fails == 0:
         stickman(None)
     elif fails == 1:
-        stickman(9)
-    elif fails == 2:
         stickman(8)
-    elif fails == 3:
+    elif fails == 2:
         stickman(7)
-    elif fails == 4:
-        stickman(6)
 
     #''''''''''''''''''''''''''''''''''''''
 
@@ -85,7 +81,7 @@ while fails != 5:
         print(lista[i], end="")
     print("\n")
 
-    print("Fails =",fails, "/5\n")
+    print("Fails =",fails, "/3\n")
 
     ##################### Main game logic
 
@@ -114,7 +110,7 @@ while fails != 5:
             print(f"\nLa palabra {line.upper()}es correcta\nFelicidades, GANASTE!!\n")
             break
     
-    if fails == 5:
-        print("\nFails =",fails, "/5")
+    if fails == 3:
+        print("\nFails =",fails, "/3")
         print('Has gastado las oportunidades\nSuerte en la próxima\n')
         break
